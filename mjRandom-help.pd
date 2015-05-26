@@ -1,0 +1,32 @@
+#N canvas 574 124 1144 702 10;
+#N canvas 347 176 494 344 META 0;
+#X text 12 105 HELP_PATCH_AUTHORS "pd meta" information added by Jonathan
+Wilkes for Pd version 0.42.;
+#X text 12 25 LICENSE GPL v2;
+#X text 12 85 AUTHOR Hans Christoph Steiner;
+#X text 12 5 KEYWORDS control;
+#X text 12 45 DESCRIPTION example libdir object class;
+#X text 12 65 INLET_0 float rats;
+#X restore 370 250 pd META;
+#X floatatom 116 168 5 0 0 0 - - -;
+#X floatatom 154 169 5 0 0 0 - - -;
+#X floatatom 191 169 5 0 0 0 - - -;
+#X text 13 -12 Creates a logarithmic spiral path in a cube unit 1;
+#X obj 124 56 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 8076 1;
+#X text 10 227 Martin Jaroszewicz EARS Department of Music University
+of California Riverside;
+#X obj 146 80 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X obj 169 100 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X text 121 39 Trajectory;
+#X text 281 79 Elliptical X;
+#X text 305 98 Elliptical Z;
+#X obj 121 123 mjcircle;
+#X connect 5 0 12 0;
+#X connect 7 0 12 1;
+#X connect 8 0 12 2;
+#X connect 12 0 1 0;
+#X connect 12 1 2 0;
+#X connect 12 2 3 0;
